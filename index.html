@@ -27,10 +27,10 @@
 			<fieldset id="contact">
 				<legend class="section-title">Contact Information</legend>
 					<label for="name">Full Name</label>
-					<input id="name" type="text" name="name" placeholder="Required">
+					<input id="name" type="text" name="name" placeholder="Required" required>
 					
 					<label for="email">Email Address</label>
-					<input id="email" type="text" name="email" placeholder="Required">
+					<input id="email" type="text" name="email" placeholder="Required" required>
 					
 					<label for="phone">Phone Number</label>
 					<input id="phone" type="text" name="phone">
@@ -41,7 +41,9 @@
 					<label for="city">City</label>
 					<input id="city" type="text" name="city">
 					
+				
 					<label>State</label>
+					<div id="drop-down">
 					<select name="states">
 						<option label="Choose State" value="select">Choose State</option>
 						<option label="NT" value="nt">NT</option>
@@ -51,6 +53,7 @@
 						<option label ="VIC" value="vic">VIC</option>
 						<option label="WA" value="wa">WA</option>
 					</select>	
+				</div>
 						<label for="zip">Zip Code</label><br />
 						<input id="zip" type="text" name="zip">
 

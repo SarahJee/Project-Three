@@ -69,8 +69,7 @@ fieldset {
 	border: none;
 }
 
-input::-webkit-input-placeholder
-{
+input::-webkit-input-placeholder {
 	font-style: italic;
 	text-align: right;
 	font-size: .75em;
@@ -87,8 +86,36 @@ input, select, textarea {
 	margin-bottom: 10px;
 }
 
-input:focus {
-	border: solid 2px #375075;
+select {
+	color: #b3b3b3;
+	font-size: 0.9em;
+	height: 53px;
+}
+
+/* Add arrow to select field */
+
+#drop-down select {
+   background: transparent;
+   -webkit-appearance: none;
+   }
+   
+#drop-down {
+    background: url('/img/arrow.png') no-repeat right #f2f2f2;
+    right: 40px;
+    border-radius: 3px;
+    height: 53px;
+   }
+
+
+/*Remove the standard blue border on select */
+*:focus {
+    outline: none;
+}
+
+input:focus, select:focus {
+	border: solid 2px #2d3944;
+	background-color: #e6e6e6;
+	color: #2d3944;
 }
 
 label {
@@ -96,14 +123,6 @@ label {
 }
 
 
-select {
-	color: #b3b3b3;
-	font-size: 0.9em;
-	height: 53px;
-	-webkit-appearance: none;  /*Removes default chrome and safari style*/
-	-moz-appearance: none; /* Removes Default Firefox style*/
-	text-indent: 0.01px; /* Removes default arrow from firefox*/
-}
 
 #zip {
 	width: 40%;
@@ -124,6 +143,7 @@ input#submit {
 	font-size: 1.2em;
 }
 
+
 .container p:last-child {
 	font-style: italic;
 	text-align: center;
@@ -131,6 +151,8 @@ input#submit {
 	font-size: .8em;
 	padding-top: 1em;
 }
+
+
 
 
 @media (min-width: 636px) {
@@ -145,7 +167,7 @@ input#submit {
 		margin-right: 30px;
 	}
 	
-	input, select {
+	input, select  {
 		width: 420px;
 	}
 	
