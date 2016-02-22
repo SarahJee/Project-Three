@@ -4,24 +4,27 @@
 	<meta charset="utf-8">
 	  <title>The Code Review Registration Form</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	  <link rel="stylesheet" href="css/styles.css">
 	  <link rel="stylesheet" href="css/normalize.css">
-	  <link href='https://fonts.googleapis.com/css?family=Merriweather:400,700' rel='stylesheet' type='text/css'>
-	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	  <link rel="stylesheet" href="css/styles.css">
+	  <link href='https://fonts.googleapis.com/css?family=Merriweather:300,400,700,900' rel='stylesheet' type='text/css'>
+
 </head>
 	  
 <body>
 	
 	<header>
 		<h1>The Code Review</h1>
+		<div class="sub">
 		<h2>Signup for our newsletter</h2>
-		<p>Get the latest news on how your code is doing right in your inbox</p>							
+		<p>Get the latest news on how your code is doing right in your inbox</p>
+		</div>	
 	</header>	
 	
 	
 	<div class="container">
+		<hr>
 		<form action="http://www.example.com/register" method="get">
-			<fieldset>
+			<fieldset id="contact">
 				<legend id="section-title">Contact Information</legend>
 					<label for="name">Full Name</label>
 					<input id="name" type="text" name="name" placeholder="Required">
@@ -48,36 +51,41 @@
 						<option label ="VIC" value="vic">VIC</option>
 						<option label="WA"value="wa">WA</option>
 					</select>	
-					<label>Zip Code<input type="text" name="zip"></label>
+						<label for="zip">Zip Code</label>
+						<input id="zip" type="text" name="zip">
+
 			</fieldset>
 			
-			<fieldset>
+			<fieldset id="newsletter">
 				<legend id="section-title">Newsletter</legend>
-					<p>Select the newsletter you would like to receive</p>
-					<input id="html-news" type="checkbox" name="news-type" value="html-news" checked="checked" />
-					<label for="html-news">HTML News</label>
-					<input id="css-news" type="checkbox" name="news-type" value="css-news"/>
-					<label for="css-news">CSS News</label>
-					<input id="javascript news" type="checkbox" name="news-type" value="javascript-news"/>
-					<label for="javascript-news">Javascript News</label>
+					<p>Select the newsletters you would like to receive</p>
+					
+					<input id="html-news" type="checkbox" name="news-type" value="html-news" checked="checked" /><label for="html-news">HTML News</label>
+					
+					
+					<input id="css-news" type="checkbox" name="news-type" value="css-news"/><label for="css-news">CSS News</label>
+					
+					<input id="javascript news" type="checkbox" name="news-type" value="javascript-news"/><label for="javascript-news">Javascript News</label>
+				
 					
 					<p>Newsletter format</p>
 					
-					<input id="html" type="radio" name="format" value="html" checked="checked"/>
 					<label for="html">HTML</label>
-					<input id="plain-text" type="radio" name="format" value="plain-text"/>
+					<input id="html" type="radio" name="format" value="html" checked="checked"/>
 					<label for="plain-text">Plain text</label>
+					<input id="plain-text" type="radio" name="format" value="plain-text"/>
+				
 					<p>Other topics you'd like to hear about</p>
 					<textarea name="topics"></textarea>
 			</fieldset>
 			
-			<div>
-				<input type="submit" name="submit" value="Sign Up" />
-				</div>
+			
+				<input id="submit" type="submit" name="submit" value="Sign Up" />
+				
 			<p>Copyright The Code Review</p>
 		</form>
+			
 	</div>
-	
 	
 </body>
 

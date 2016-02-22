@@ -6,19 +6,144 @@
 
 body {
 	font-family: 'Merriweather' serif; 
-	}
-
-p {
-	font-weight: 400;
-	}
+}
 	
-h1 {
-	font-weight: 700;
-
+.container {
+	max-width: 95%;
+	margin: 0 auto;
 }
 
+header {
+	margin: 0 auto;
+	text-align: center;
+}
+
+label {
+	color: #506579;	
+	}
+	
+p {
+	color: #939393;
+}
+	
+h1 {
+	font-size: 1.3em;
+	font-weight: 500;
+	text-transform: uppercase;
+	color: #fff;
+	background-color: #2d3944;
+	margin-top: 0;
+	padding: 30px;
+}
+
+h2 {
+	font-size: 1.175em;
+	padding-top: 15px;
+}
+
+.sub {
+	max-width: 90%;
+	margin: 0 auto;
+}
+
+.sub p {
+	padding-bottom: 1.5em;
+}
+
+hr {
+	border-top: solid 4px #2d3944;
+	width: 93%;
+	margin-bottom: 3px;
+}
 
 #section-title {
 	font-size: 1.1em;
 	font-weight: 600;
+	border-top: solid 2px #2d3944;
+	width: 100%;
+	margin: 0 auto;
+	padding: 1.5em 0;
+	
 }
+
+fieldset {
+	border: none;
+}
+
+input::-webkit-input-placeholder
+{
+	font-style: italic;
+	text-align: right;
+	font-size: .75em;
+	padding: 2px 10px;
+	color: #b3b3b3;
+}
+
+input, select, textarea {
+	width: 100%;
+	background-color: #f2f2f2;
+	border: none;
+	border-radius: 3px;
+	padding: 1em;
+	margin-bottom: 20px;
+}
+
+input:focus {
+	border: solid 2px #375075;
+}
+
+fieldset#contact label {
+	display: block;
+	padding-bottom: 10px;
+}
+
+
+select {
+	color: #b3b3b3;
+	font-size: 0.9em;
+	height: 53px;
+	-webkit-appearance: none;  /*Removes default chrome and safari style*/
+	-moz-appearance: none; /* Removes Default Firefox style*/
+	text-indent: 0.01px; /* Removes default arrow from firefox*/
+}
+
+#zip {
+	width: 50%;
+}
+
+textarea {
+	height: 7em;
+}
+
+input#submit {
+	background-color: #57bab4;
+	color: #fff;
+	font-weight: 600;
+	font-size: 1.2em;
+}
+
+.container p:last-child {
+	font-style: italic;
+	text-align: center;
+}
+
+
+@media (min-width: 610px) {
+	
+	.container {
+		width: 610px;
+	}
+	
+	fieldset#contact label {
+		float: left; 
+		width: 130px;
+		display: inline-block;
+		padding-top: 1em;
+	}
+	
+	input, select {
+		width: 450px;
+	}
+}
+
+
