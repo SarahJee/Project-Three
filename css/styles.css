@@ -6,9 +6,10 @@
 
 body {
 	font-family: 'Merriweather' serif; 
+	color: #506579;	
 }
 	
-.container {
+.container, input#submit {
 	max-width: 95%;
 	margin: 0 auto;
 }
@@ -18,13 +19,11 @@ header {
 	text-align: center;
 }
 
-label {
-	color: #506579;	
-	}
 	
-p {
+.sub p {
 	color: #939393;
 }
+
 	
 h1 {
 	font-size: 1.3em;
@@ -85,16 +84,15 @@ input, select, textarea {
 	border: none;
 	border-radius: 3px;
 	padding: 1em;
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 }
 
 input:focus {
 	border: solid 2px #375075;
 }
 
-fieldset#contact label {
-	display: block;
-	padding-bottom: 10px;
+label {
+	line-height: 2.5;
 }
 
 
@@ -108,8 +106,12 @@ select {
 }
 
 #zip {
-	width: 50%;
+	width: 40%;
 }
+
+fieldset#newsletter input {
+		width: 30px;
+	}
 
 textarea {
 	height: 7em;
@@ -125,10 +127,13 @@ input#submit {
 .container p:last-child {
 	font-style: italic;
 	text-align: center;
+	color: #c6c6c6;
+	font-size: .8em;
+	padding-top: 1em;
 }
 
 
-@media (min-width: 610px) {
+@media (min-width: 636px) {
 	
 	.container {
 		width: 610px;
@@ -137,13 +142,22 @@ input#submit {
 	fieldset#contact label {
 		float: left; 
 		width: 130px;
-		display: inline-block;
-		padding-top: 1em;
+		margin-right: 30px;
 	}
 	
 	input, select {
-		width: 450px;
+		width: 420px;
 	}
+	
+	input#submit {
+		width: 95%;
+	}
+	
+	#zip {
+	width: 25%;
+}
+
+
 }
 
 
