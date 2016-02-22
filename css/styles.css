@@ -97,10 +97,10 @@ select {
 #drop-down select {
    background: transparent;
    -webkit-appearance: none;
+    background: url('/img/arrow.png') no-repeat right #f2f2f2;
    }
    
 #drop-down {
-    background: url('/img/arrow.png') no-repeat right #f2f2f2;
     right: 40px;
     border-radius: 3px;
     height: 53px;
