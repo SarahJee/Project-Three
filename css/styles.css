@@ -15,11 +15,14 @@ header {
 	}
 
 hr {
-	border: solid 3px #2d3944;
+	border-top: solid 5px #2d3944;
 	width: 95%;	
 	margin: 0 auto 3px;
 	}
-
+	
+hr:nth-child(2) {
+	border: solid 1px #2d3944;
+}
 	
 .container {
 	max-width: 95%;
@@ -54,13 +57,13 @@ h2 {
 .section-title {
 	font-size: 1.1em;
 	font-weight: 600;
-	border-top: solid 2px #2d3944;
 	width: 100%;
-	margin: 0 auto;
-	padding: 1.5em 0;	
+	padding: 2em 0;	
 	}
 
-
+.news {
+	border-top: solid 2px #2d3944;
+}
 /* FORM STYLES */
 
 fieldset {
@@ -70,6 +73,7 @@ fieldset {
 label {
 	line-height: 2.5;
 	}
+	
 
 /*Remove the standard blue border on select */
 *:focus {
@@ -85,7 +89,7 @@ input:focus, select:focus {
 input, select, textarea {
 	width: 100%;
 	background-color: #f2f2f2;
-	border: none;
+	border: solid 2px transparent;
 	border-radius: 3px;
 	padding: 1em;
 	margin-bottom: 10px;
@@ -117,12 +121,20 @@ select {
     right: 40px;
     border-radius: 3px;
     height: 53px;
+    /*margin-bottom: -10px;*/
    }
 
 
 #zip {
 	width: 40%;
 	}
+
+
+
+/*	
+label[for="zip"]  {
+	line-height: 6;
+}*/
 
 input#submit {
 	max-width: 95%;
@@ -183,6 +195,8 @@ input#submit:hover {
 	#zip {
 		width: 25%;
 	}
+	
+
 	
 
 
