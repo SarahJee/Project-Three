@@ -80,9 +80,10 @@ label {
     outline: none;
 	}
 
-input:focus, select:focus {
+input:focus, select:focus, textarea:focus {
 	border: solid 2px #2d3944;
-	background-color: #e6e6e6;
+	transition: background-color 1s ease;
+	background-color: #d3d3d3;
 	color: #2d3944;
 	}
 
@@ -107,12 +108,8 @@ select {
 	color: #b3b3b3;
 	font-size: 0.9em;
 	height: 53px;
-	}
-
-/* Add arrow to select field */
-
-#drop-down select {
-   background: transparent;
+	/* Add arrow to select field */
+	background: transparent;
    -webkit-appearance: none;
     background: url('/img/arrow.png') no-repeat right #f2f2f2;
    }
@@ -123,7 +120,6 @@ select {
     height: 53px;
     /*margin-bottom: -10px;*/
    }
-
 
 #zip {
 	width: 40%;
