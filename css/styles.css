@@ -1,10 +1,13 @@
+/*Mobile First */
+
+
 /* GLOBAL LAYOUT */
 * { 
   box-sizing: border-box;
 	}
 
 body {
-	font-family: 'Merriweather', serif; 
+	font-family: 'Lora', serif; 
 	font-weight: 300;
 	color: #506579;	
 	}
@@ -118,20 +121,13 @@ select {
     right: 40px;
     border-radius: 3px;
     height: 53px;
-    /*margin-bottom: -10px;*/
+    margin-bottom: 10px;
    }
 
 #zip {
 	width: 40%;
+	display: block;
 	}
-
-
-
-/*	
-label[for="zip"]  {
-	line-height: 6;
-}*/
-
 
 fieldset#newsletter input {
 		width: 30px;
@@ -163,7 +159,7 @@ input#submit:hover {
 	padding-top: 1em;
 	}
 
-
+/* Media Queries Tablet(ish) and up */
 
 
 @media (min-width: 636px) {
@@ -190,10 +186,6 @@ input#submit:hover {
 		width: 25%;
 	}
 	
-
-	
-
-
 }
 
 
