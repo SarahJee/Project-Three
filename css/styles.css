@@ -59,7 +59,7 @@ h2 {
 	font-weight: 600;
 	width: 100%;
 	padding: 2em 0;	
-	}
+		}
 
 .news {
 	border-top: solid 2px #2d3944;
@@ -136,10 +136,6 @@ label[for="zip"]  {
 	line-height: 6;
 }*/
 
-input#submit {
-	max-width: 95%;
-	margin-left: 2.5%;
-	}
 
 fieldset#newsletter input {
 		width: 30px;
@@ -155,6 +151,8 @@ input#submit {
 	color: #fff;
 	font-weight: 600;
 	font-size: 1.2em;
+	max-width: 95%;
+	margin-left: 2.5%;
 	}
 
 input#submit:hover {
