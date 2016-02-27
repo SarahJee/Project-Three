@@ -23,29 +23,28 @@
 	
 	<div class="container">
 		<hr><hr>
-		<form action="http://www.example.com/register" method="get">
+		<form action="http://www.example.com/register" method="post">
 			<fieldset id="contact">
 				
 				<legend class="section-title">Contact Information</legend>
 					<label for="name">Full Name</label>
-					<input id="name" type="text" name="name" placeholder="Required" required>
+					<input id="name" type="text" name="subscribe-name" placeholder="Required" required>
 					
 					<label for="email">Email Address</label>
-					<input id="email" type="text" name="email" placeholder="Required" required>
+					<input id="email" type="email" name="email" placeholder="Required" required>
 					
 					<label for="phone">Phone Number</label>
-					<input id="phone" type="text" name="phone">
+					<input id="phone" type="tel" name="phone-number">
 					
 					<label for="street">Street Address</label>
-					<input id="street" type="text" name="street">
+					<input id="street" type="text" name="street-address">
 					
 					<label for="city">City</label>
 					<input id="city" type="text" name="city">
 					
 				
-					<label>State</label>
-					<div id="drop-down">
-					<select name="state">
+					<label for="state">State</label>
+					<select id="state" name="state">
 						<option label="Choose State" value="select">Choose State</option>
 						<option label="NT" value="nt">NT</option>
 						<option label="NSW" value="nsw">NSW</option>
@@ -54,7 +53,7 @@
 						<option label ="VIC" value="vic">VIC</option>
 						<option label="WA" value="wa">WA</option>
 					</select>	
-				</div>
+
 						<label for="zip">Zip Code</label>
 						<input id="zip" type="text" name="zip">
 
@@ -74,18 +73,18 @@
 					
 					<p>Newsletter format</p>
 					
-					<input id="html" type="radio" name="format" value="html" checked="checked"/>
+					<input id="html" type="radio" name="news-format" value="html" checked="checked"/>
 					<label for="html">HTML</label><br />
 					
-					<input id="plain-text" type="radio" name="format" value="plain-text"/>
+					<input id="plain-text" type="radio" name="news-format" value="plain-text"/>
 					<label for="plain-text">Plain text</label><br />
 					
-					<p>Other topics you'd like to hear about</p>
-					<textarea name="topics"></textarea>
+					<label for="topics">Other topics you'd like to hear about</label>
+					<textarea id="topics" name="preferred-topics"></textarea>
 			</fieldset>
 			
 			
-				<input id="submit" type="submit" name="submit" value="Sign Up" />
+				<input id="submit" type="submit" name="submit-button" value="Sign Up" />
 				
 			<p>Copyright The Code Review</p>
 		</form>
